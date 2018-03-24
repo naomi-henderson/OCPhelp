@@ -1,12 +1,12 @@
-## Notes for our pangeo/python working group:
+# Notes for our pangeo/python working group:
   
 Getting started with jupyter notebooks (http://ocp.ldeo.columbia.edu/pangeo/GettingStarted.html)
 
-# meetings:
+## meetings:
     
    Organizational meeting: 28 Mar 2018, 2pm 104 Oceanography
 
-# tutorials:
+## tutorials:
 
   The [**"official" Python Tutorial**](https://docs.python.org/3/tutorial/)
   
@@ -15,6 +15,6 @@ Getting started with jupyter notebooks (http://ocp.ldeo.columbia.edu/pangeo/Gett
   [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
 
 
-# examples:
+## examples:
 
   Nicolas Fauchereau's [EOF example](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/eofs_EOF_decomposition.ipynb) - needs to be updated
