@@ -4,17 +4,17 @@ Getting started with jupyter notebooks
 
 ## meetings:
     
-   Organizational meeting: 28 Mar 2018, 2pm 104 Oceanography
+  - Organizational meeting: 28 Mar 2018, 2pm 104 Oceanography
 
 ## tutorials:
 
-  The [**"official" Python Tutorial**](https://docs.python.org/3/tutorial/)
+  - The [**"official" Python Tutorial**](https://docs.python.org/3/tutorial/)
   
-  Ryan's [**"Python for Scientific Computing" workshop page**](https://github.com/rabernat/python_teaching)
+  - Ryan's [**"Python for Scientific Computing" workshop page**](https://github.com/rabernat/python_teaching)
   
-  [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
+  - [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
 
 
 ## examples:
 
-  Nicolas Fauchereau's [EOF example](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/eofs_EOF_decomposition.ipynb)  (needs to be updated)
+  - Nicolas Fauchereau's [EOF example](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/eofs_EOF_decomposition.ipynb)  (needs to be updated)
