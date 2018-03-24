@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Setting up Jupyter Notebook on byrd</title>
+  </head>
+  <body bgcolor=white>
+  <pre>
+    <code>
+<strong>How to get your jupyter notebooks running on byrd </strong>
+
+#1. open a terminal on your laptop
+
+#2. log onto byrd with your username (first part of email address)
+
+    ssh -X username@byrd.ldeo.columbia.edu
+    # install basic conda config (answer yes to all questions)
+    sh /home/pangeo/Miniconda3-latest-Linux-x86_64.sh
+    source ~/.bashrc
+    conda update -n base conda
+
+#3. set up environment 
+
+    cp /home/pangeo/pangeo_environment.yml .
+    conda env create -f pangeo_environment.yml
+    mkdir notebooks
+
+#4. set up notebook server:
+
+    source activate pangeo
+    jupyter notebook --generate-config
+
+    # edit .jupyter/jupyter_notebook_config.py
+    # you will want to change these lines:
+    # (notice it tells you how to setup your password using python - do it)
+    
+        #c.NotebookApp.ip = 'localhost'
+        #c.NotebookApp.open_browser = True
+        #c.NotebookApp.password = ''
+        #c.NotebookApp.port = 8888
+
+    # here are my settings, for example, (this is not the hash of my real passwd)
+
+        c.NotebookApp.ip = 'byrd.ldeo.columbia.edu'
+        c.NotebookApp.open_browser = False
+        c.NotebookApp.password = 'YourPasswordHere'
+        c.NotebookApp.port = xxxx
+    
+    # test your jupyter notebook
+    jupyter notebook
+    # now try opening in your browser (chrome, if possible): http://byrd.ldeo.columbia.edu:xxxx
+
+#5. to restart notebook server without staying logged onto byrd:
+
+    ssh -X username@byrd.ldeo.columbia.edu
+    cd notebooks
+    source activate pangeo
+    jupyter notebook >& /dev/null &
+    exit
+    
+</code>
+</pre>
+</body>
+</html>
