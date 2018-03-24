@@ -1,6 +1,6 @@
 # Notes for our pangeo/python working group:
   
-Getting started with jupyter notebooks (http://ocp.ldeo.columbia.edu/pangeo/GettingStarted.html)
+Getting started with jupyter notebooks
 
 ## meetings:
     
