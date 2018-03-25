@@ -14,6 +14,7 @@ Getting started with jupyter notebooks
   
   - [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
 
+
 ## examples:
 
   - Nicolas Fauchereau's [EOF example](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/eofs_EOF_decomposition.ipynb)  (needs to be updated)
