@@ -13,6 +13,10 @@ Getting started with jupyter notebooks
   - Ryan's [**"Python for Scientific Computing" workshop page**](https://github.com/rabernat/python_teaching)
   
   - [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
+  
+## basic documentation:
+  
+  - [Numpy documentation](http://docs.scipy.org/doc/numpy/reference/)
 
 ## examples:
 
