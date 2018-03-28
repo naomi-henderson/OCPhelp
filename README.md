@@ -4,7 +4,7 @@ Getting started with jupyter notebooks
 
 ## meetings:
     
-  - Organizational meeting: 28 Mar 2018, 2pm 104 Oceanography
+  - Organizational meeting: 28 Mar 2018, 2 pm 104 Oceanography
 
 ## tutorials:
 
