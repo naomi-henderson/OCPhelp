@@ -10,7 +10,7 @@ Getting started with jupyter notebooks
 
   - The [**"official" Python Tutorial**](https://docs.python.org/3/tutorial/)
   
-  - Ryan's [**"Python for Scientific Computing" workshop page**](https://github.com/rabernat/python_teaching)
+  - Ryan's [**RESEARCH COMPUTING IN EARTH SCIENCES**](https://rabernat.github.io/research_computing/)
   
   - [**eScience tutorials**](https://github.com/uwescience/eScience_tutorials)
   
