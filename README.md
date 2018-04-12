@@ -2,6 +2,7 @@
   
 Getting started with jupyter notebooks
 
+
 ## meetings:
     
   - Organizational meeting: 28 Mar 2018, 2 pm, 104 Oceanography
@@ -19,5 +20,4 @@ Getting started with jupyter notebooks
   - [Numpy documentation](http://docs.scipy.org/doc/numpy/reference/)
 
 ## examples:
-
   - Nicolas Fauchereau's [EOF example](http://nbviewer.jupyter.org/github/nicolasfauchereau/metocean/blob/master/notebooks/eofs_EOF_decomposition.ipynb)  (needs to be updated)
