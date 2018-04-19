@@ -1,0 +1,2565 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# comments are anything that comes after the \"#\" symbol\n",
+    "a = 1       # assign 1 to variable a\n",
+    "b = \"hello\" # assign \"hello\" to variable b\n",
+    "print(b)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a))\n",
+    "print(type(b))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a) is float)\n",
+    "print(type(b) is str)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello'"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b.capitalize()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1+1-5 \n",
+    "5*10\n",
+    "type(1/2)\n",
+    "2**4\n",
+    "round(9/10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(-0.2+0.4j)"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(1+2j)/(3-4j)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "(not True) or (not False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Positive Number\n"
+     ]
+    }
+   ],
+   "source": [
+    "x =10\n",
+    "if x > 0:\n",
+    "    print('Positive Number')\n",
+    "    if x >=100:\n",
+    "        print('Huge Number!')\n",
+    "elif x < 0:\n",
+    "    print('Negative Number')\n",
+    "else:\n",
+    "    print('Zero!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "count = 0\n",
+    "while count < 10: \n",
+    "    count += 2\n",
+    "    print(count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(2,10,2):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "type"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(range)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[0;31mInit signature:\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m/\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+       "\u001b[0;31mDocstring:\u001b[0m     \n",
+       "range(stop) -> range object\n",
+       "range(start, stop[, step]) -> range object\n",
+       "\n",
+       "Return an object that produces a sequence of integers from start (inclusive)\n",
+       "to stop (exclusive) by step.  range(i, j) produces i, i+1, i+2, ..., j-1.\n",
+       "start defaults to 0, and stop is omitted!  range(4) produces 0, 1, 2, 3.\n",
+       "These are exactly the valid indices for a list of 4 elements.\n",
+       "When step is given, it specifies the increment (or decrement).\n",
+       "\u001b[0;31mType:\u001b[0m           type\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "range?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dog 3\n",
+      "cat 3\n",
+      "fish 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "for pet in ['dog', 'cat', 'fish']:\n",
+    "    print(pet, len(pet))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l = ['dog','cat','fish']\n",
+    "type(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['cat', 'dog', 'fish']"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l.sort()\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[14, 13, 11, 10, 10, 6, 5, 4, 3, 2, 1, 0]"
+      ]
+     },
+     "execution_count": 140,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "r = list(range(5))\n",
+    "r.append(5)\n",
+    "r[len(r):]=[6]\n",
+    "o = list(range(10,15))\n",
+    "r.extend(o)\n",
+    "r.insert(50,10)\n",
+    "r.pop(9)\n",
+    "r.index(11)\n",
+    "r.count(10)\n",
+    "r.sort()\n",
+    "r.reverse()\n",
+    "d=r.copy()\n",
+    "e=r\n",
+    "e"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 2, 3, 4] [10, 11, 12, 13, 14]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "[0, 1, 2, 3, 4, 10, 11, 12, 13, 14]"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = list(range(5))\n",
+    "y = list(range(10,15))\n",
+    "print(x,y)\n",
+    "z = x+y\n",
+    "z"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "first 3 [0, 1, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('first 3',z[:3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "last  [12, 13, 14]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('last ',z[-3:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "middle, skipping every other item [10, 12, 14]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('middle, skipping every other item', z[5:10:2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ryan\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = 'Ryan Abernathey'\n",
+    "print(name[:4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "z[5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 1, 2, 3, 'fish', 10, 11, 12, 13, 14]"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "z[4]= 'fish'\n",
+    "z"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 1, 4, 9, 16]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "squares = [n**2 for n in range(5)]\n",
+    "squares"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "first: 0 second: 10\n",
+      "first: 1 second: 11\n",
+      "first: 2 second: 12\n",
+      "first: 3 second: 13\n",
+      "first: 4 second: 14\n"
+     ]
+    }
+   ],
+   "source": [
+    "for item1, item2 in zip(x,y):\n",
+    "    print('first:', item1, 'second:', item2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = ('Ryan', 33, True)\n",
+    "b = 'Takaya', 25, False\n",
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ryan\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name, age, status = a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "33\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(age)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'Ryan', 'age': 33}"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d = {'name': 'Ryan', 'age': 33}\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'Takaya', 'age': 25}"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "e = dict(name='Takaya', age=25)\n",
+    "e\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Ryan'"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d['name']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Takaya'"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "e['name']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('age' in d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('height' in e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'Ryan', 'age': 33, 'height': (5, 11)}"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d['height'] = (5,11) # a tuple\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'Ryan', 'age': 33, 'height': (5, 11), 99: 'ninety nine'}"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d[99] = 'ninety nine'\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "name Ryan\n",
+      "age 33\n",
+      "height (5, 11)\n",
+      "99 ninety nine\n"
+     ]
+    }
+   ],
+   "source": [
+    "for k in d:\n",
+    "    print(k, d[k])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "name Ryan\n",
+      "age 33\n",
+      "height (5, 11)\n",
+      "99 ninety nine\n"
+     ]
+    }
+   ],
+   "source": [
+    "for k in d.items():\n",
+    "    print(k, j)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sha1:da89d6bb5c32:162d82b7b694f64a2e5a8dc72b497062ce305e51'"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from notebook.auth import passwd; passwd()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_hello():\n",
+    "    \"\"\"Return the word hello.\"\"\"\n",
+    "    return 'Hello'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "function"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(say_hello)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[0;31mSignature:\u001b[0m \u001b[0msay_hello\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+       "\u001b[0;31mDocstring:\u001b[0m Return the word hello.\n",
+       "\u001b[0;31mFile:\u001b[0m      /home/home2/zpengfei/<ipython-input-1-dcb80a97012b>\n",
+       "\u001b[0;31mType:\u001b[0m      function\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "say_hello?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello'"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "say_hello()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "res = say_hello()\n",
+    "res"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_hello_to(name):\n",
+    "    \"\"\"Return a greeting to `name`\"\"\"\n",
+    "    return 'Hello ' + name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello World'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "say_hello_to('World')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "must be str, not int",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-11-107e7297d09f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0msay_hello_to\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m<ipython-input-8-cd3dd2ff78ae>\u001b[0m in \u001b[0;36msay_hello_to\u001b[0;34m(name)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0msay_hello_to\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m     \u001b[0;34m\"\"\"Return a greeting to `name`\"\"\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0;34m'Hello '\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: must be str, not int"
+     ]
+    }
+   ],
+   "source": [
+    "say_hello_to(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_hello_to(name):\n",
+    "    \"\"\"Return a greeting to `name`\"\"\"\n",
+    "    return 'Hello ' + str(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello 10'"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "say_hello_to(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_hello_or_hola(name, spanish=False):\n",
+    "    \"\"\"Say hello in multiple languages.\"\"\"\n",
+    "    if spanish:\n",
+    "        greeting = 'Hola '\n",
+    "    else:\n",
+    "        greeting = 'Hello '\n",
+    "    return greeting + name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Ryan\n",
+      "Hola Juan\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(say_hello_or_hola('Ryan'))\n",
+    "print(say_hello_or_hola('Juan', spanish=True))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_hello_to_everyone(*args):\n",
+    "    return ['hello ' + str(a) for a in args]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['hello Ryan', 'hello Juan', 'hello Takaya']"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "say_hello_to_everyone('Ryan', 'Juan', 'Takaya')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def fib(n):\n",
+    "    l = [1,1]\n",
+    "    for i in range(n-2):\n",
+    "        l.append(l[-1] + l[-2])\n",
+    "    return l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fib(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add(x,y):\n",
+    "    return [a + b for a,b in zip(x,y)]\n",
+    "def multiply(x,y):\n",
+    "    return [a *  b for a,b in zip(x,y)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(range(10),range(10))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 3, 4, 15, 12]"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "multiply(range(5), [9,3,2,5,3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "9.37 ms ± 927 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
+     ]
+    }
+   ],
+   "source": [
+    "N = 100000\n",
+    "%timeit multiply(range(N), range(N))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "536 µs ± 9.3 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "%timeit np.arange(N) * np.arange(N)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['In',\n",
+       " 'N',\n",
+       " 'Out',\n",
+       " '_',\n",
+       " '_10',\n",
+       " '_13',\n",
+       " '_17',\n",
+       " '_19',\n",
+       " '_2',\n",
+       " '_21',\n",
+       " '_22',\n",
+       " '_4',\n",
+       " '_5',\n",
+       " '__',\n",
+       " '___',\n",
+       " '__builtin__',\n",
+       " '__builtins__',\n",
+       " '__doc__',\n",
+       " '__loader__',\n",
+       " '__name__',\n",
+       " '__package__',\n",
+       " '__spec__',\n",
+       " '_dh',\n",
+       " '_i',\n",
+       " '_i1',\n",
+       " '_i10',\n",
+       " '_i11',\n",
+       " '_i12',\n",
+       " '_i13',\n",
+       " '_i14',\n",
+       " '_i15',\n",
+       " '_i16',\n",
+       " '_i17',\n",
+       " '_i18',\n",
+       " '_i19',\n",
+       " '_i2',\n",
+       " '_i20',\n",
+       " '_i21',\n",
+       " '_i22',\n",
+       " '_i23',\n",
+       " '_i24',\n",
+       " '_i25',\n",
+       " '_i3',\n",
+       " '_i4',\n",
+       " '_i5',\n",
+       " '_i6',\n",
+       " '_i7',\n",
+       " '_i8',\n",
+       " '_i9',\n",
+       " '_ih',\n",
+       " '_ii',\n",
+       " '_iii',\n",
+       " '_oh',\n",
+       " 'add',\n",
+       " 'exit',\n",
+       " 'fib',\n",
+       " 'get_ipython',\n",
+       " 'multiply',\n",
+       " 'np',\n",
+       " 'quit',\n",
+       " 'res',\n",
+       " 'say_hello',\n",
+       " 'say_hello_or_hola',\n",
+       " 'say_hello_to',\n",
+       " 'say_hello_to_everyone']"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dir()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['ALLOW_THREADS',\n",
+       " 'AxisError',\n",
+       " 'BUFSIZE',\n",
+       " 'CLIP',\n",
+       " 'ComplexWarning',\n",
+       " 'DataSource',\n",
+       " 'ERR_CALL',\n",
+       " 'ERR_DEFAULT',\n",
+       " 'ERR_IGNORE',\n",
+       " 'ERR_LOG',\n",
+       " 'ERR_PRINT',\n",
+       " 'ERR_RAISE',\n",
+       " 'ERR_WARN',\n",
+       " 'FLOATING_POINT_SUPPORT',\n",
+       " 'FPE_DIVIDEBYZERO',\n",
+       " 'FPE_INVALID',\n",
+       " 'FPE_OVERFLOW',\n",
+       " 'FPE_UNDERFLOW',\n",
+       " 'False_',\n",
+       " 'Inf',\n",
+       " 'Infinity',\n",
+       " 'MAXDIMS',\n",
+       " 'MAY_SHARE_BOUNDS',\n",
+       " 'MAY_SHARE_EXACT',\n",
+       " 'MachAr',\n",
+       " 'ModuleDeprecationWarning',\n",
+       " 'NAN',\n",
+       " 'NINF',\n",
+       " 'NZERO',\n",
+       " 'NaN',\n",
+       " 'PINF',\n",
+       " 'PZERO',\n",
+       " 'PackageLoader',\n",
+       " 'RAISE',\n",
+       " 'RankWarning',\n",
+       " 'SHIFT_DIVIDEBYZERO',\n",
+       " 'SHIFT_INVALID',\n",
+       " 'SHIFT_OVERFLOW',\n",
+       " 'SHIFT_UNDERFLOW',\n",
+       " 'ScalarType',\n",
+       " 'Tester',\n",
+       " 'TooHardError',\n",
+       " 'True_',\n",
+       " 'UFUNC_BUFSIZE_DEFAULT',\n",
+       " 'UFUNC_PYVALS_NAME',\n",
+       " 'VisibleDeprecationWarning',\n",
+       " 'WRAP',\n",
+       " '_NoValue',\n",
+       " '__NUMPY_SETUP__',\n",
+       " '__all__',\n",
+       " '__builtins__',\n",
+       " '__cached__',\n",
+       " '__config__',\n",
+       " '__doc__',\n",
+       " '__file__',\n",
+       " '__git_revision__',\n",
+       " '__loader__',\n",
+       " '__mkl_version__',\n",
+       " '__name__',\n",
+       " '__package__',\n",
+       " '__path__',\n",
+       " '__spec__',\n",
+       " '__version__',\n",
+       " '_distributor_init',\n",
+       " '_globals',\n",
+       " '_import_tools',\n",
+       " '_mat',\n",
+       " '_mklinit',\n",
+       " '_numpy_tester',\n",
+       " 'abs',\n",
+       " 'absolute',\n",
+       " 'absolute_import',\n",
+       " 'add',\n",
+       " 'add_docstring',\n",
+       " 'add_newdoc',\n",
+       " 'add_newdoc_ufunc',\n",
+       " 'add_newdocs',\n",
+       " 'alen',\n",
+       " 'all',\n",
+       " 'allclose',\n",
+       " 'alltrue',\n",
+       " 'amax',\n",
+       " 'amin',\n",
+       " 'angle',\n",
+       " 'any',\n",
+       " 'append',\n",
+       " 'apply_along_axis',\n",
+       " 'apply_over_axes',\n",
+       " 'arange',\n",
+       " 'arccos',\n",
+       " 'arccosh',\n",
+       " 'arcsin',\n",
+       " 'arcsinh',\n",
+       " 'arctan',\n",
+       " 'arctan2',\n",
+       " 'arctanh',\n",
+       " 'argmax',\n",
+       " 'argmin',\n",
+       " 'argpartition',\n",
+       " 'argsort',\n",
+       " 'argwhere',\n",
+       " 'around',\n",
+       " 'array',\n",
+       " 'array2string',\n",
+       " 'array_equal',\n",
+       " 'array_equiv',\n",
+       " 'array_repr',\n",
+       " 'array_split',\n",
+       " 'array_str',\n",
+       " 'asanyarray',\n",
+       " 'asarray',\n",
+       " 'asarray_chkfinite',\n",
+       " 'ascontiguousarray',\n",
+       " 'asfarray',\n",
+       " 'asfortranarray',\n",
+       " 'asmatrix',\n",
+       " 'asscalar',\n",
+       " 'atleast_1d',\n",
+       " 'atleast_2d',\n",
+       " 'atleast_3d',\n",
+       " 'average',\n",
+       " 'bartlett',\n",
+       " 'base_repr',\n",
+       " 'bench',\n",
+       " 'binary_repr',\n",
+       " 'bincount',\n",
+       " 'bitwise_and',\n",
+       " 'bitwise_not',\n",
+       " 'bitwise_or',\n",
+       " 'bitwise_xor',\n",
+       " 'blackman',\n",
+       " 'block',\n",
+       " 'bmat',\n",
+       " 'bool',\n",
+       " 'bool8',\n",
+       " 'bool_',\n",
+       " 'broadcast',\n",
+       " 'broadcast_arrays',\n",
+       " 'broadcast_to',\n",
+       " 'busday_count',\n",
+       " 'busday_offset',\n",
+       " 'busdaycalendar',\n",
+       " 'byte',\n",
+       " 'byte_bounds',\n",
+       " 'bytes0',\n",
+       " 'bytes_',\n",
+       " 'c_',\n",
+       " 'can_cast',\n",
+       " 'cast',\n",
+       " 'cbrt',\n",
+       " 'cdouble',\n",
+       " 'ceil',\n",
+       " 'cfloat',\n",
+       " 'char',\n",
+       " 'character',\n",
+       " 'chararray',\n",
+       " 'choose',\n",
+       " 'clip',\n",
+       " 'clongdouble',\n",
+       " 'clongfloat',\n",
+       " 'column_stack',\n",
+       " 'common_type',\n",
+       " 'compare_chararrays',\n",
+       " 'compat',\n",
+       " 'complex',\n",
+       " 'complex128',\n",
+       " 'complex256',\n",
+       " 'complex64',\n",
+       " 'complex_',\n",
+       " 'complexfloating',\n",
+       " 'compress',\n",
+       " 'concatenate',\n",
+       " 'conj',\n",
+       " 'conjugate',\n",
+       " 'convolve',\n",
+       " 'copy',\n",
+       " 'copysign',\n",
+       " 'copyto',\n",
+       " 'core',\n",
+       " 'corrcoef',\n",
+       " 'correlate',\n",
+       " 'cos',\n",
+       " 'cosh',\n",
+       " 'count_nonzero',\n",
+       " 'cov',\n",
+       " 'cross',\n",
+       " 'csingle',\n",
+       " 'ctypeslib',\n",
+       " 'cumprod',\n",
+       " 'cumproduct',\n",
+       " 'cumsum',\n",
+       " 'datetime64',\n",
+       " 'datetime_as_string',\n",
+       " 'datetime_data',\n",
+       " 'deg2rad',\n",
+       " 'degrees',\n",
+       " 'delete',\n",
+       " 'deprecate',\n",
+       " 'deprecate_with_doc',\n",
+       " 'diag',\n",
+       " 'diag_indices',\n",
+       " 'diag_indices_from',\n",
+       " 'diagflat',\n",
+       " 'diagonal',\n",
+       " 'diff',\n",
+       " 'digitize',\n",
+       " 'disp',\n",
+       " 'divide',\n",
+       " 'division',\n",
+       " 'divmod',\n",
+       " 'dot',\n",
+       " 'double',\n",
+       " 'dsplit',\n",
+       " 'dstack',\n",
+       " 'dtype',\n",
+       " 'e',\n",
+       " 'ediff1d',\n",
+       " 'einsum',\n",
+       " 'einsum_path',\n",
+       " 'emath',\n",
+       " 'empty',\n",
+       " 'empty_like',\n",
+       " 'equal',\n",
+       " 'erf',\n",
+       " 'errstate',\n",
+       " 'euler_gamma',\n",
+       " 'exp',\n",
+       " 'exp2',\n",
+       " 'expand_dims',\n",
+       " 'expm1',\n",
+       " 'extract',\n",
+       " 'eye',\n",
+       " 'fabs',\n",
+       " 'fastCopyAndTranspose',\n",
+       " 'fft',\n",
+       " 'fill_diagonal',\n",
+       " 'find_common_type',\n",
+       " 'finfo',\n",
+       " 'fix',\n",
+       " 'flatiter',\n",
+       " 'flatnonzero',\n",
+       " 'flexible',\n",
+       " 'flip',\n",
+       " 'fliplr',\n",
+       " 'flipud',\n",
+       " 'float',\n",
+       " 'float128',\n",
+       " 'float16',\n",
+       " 'float32',\n",
+       " 'float64',\n",
+       " 'float_',\n",
+       " 'float_power',\n",
+       " 'floating',\n",
+       " 'floor',\n",
+       " 'floor_divide',\n",
+       " 'fmax',\n",
+       " 'fmin',\n",
+       " 'fmod',\n",
+       " 'format_float_positional',\n",
+       " 'format_float_scientific',\n",
+       " 'format_parser',\n",
+       " 'frexp',\n",
+       " 'frombuffer',\n",
+       " 'fromfile',\n",
+       " 'fromfunction',\n",
+       " 'fromiter',\n",
+       " 'frompyfunc',\n",
+       " 'fromregex',\n",
+       " 'fromstring',\n",
+       " 'full',\n",
+       " 'full_like',\n",
+       " 'fv',\n",
+       " 'generic',\n",
+       " 'genfromtxt',\n",
+       " 'geomspace',\n",
+       " 'get_array_wrap',\n",
+       " 'get_include',\n",
+       " 'get_printoptions',\n",
+       " 'getbufsize',\n",
+       " 'geterr',\n",
+       " 'geterrcall',\n",
+       " 'geterrobj',\n",
+       " 'gradient',\n",
+       " 'greater',\n",
+       " 'greater_equal',\n",
+       " 'half',\n",
+       " 'hamming',\n",
+       " 'hanning',\n",
+       " 'heaviside',\n",
+       " 'histogram',\n",
+       " 'histogram2d',\n",
+       " 'histogramdd',\n",
+       " 'hsplit',\n",
+       " 'hstack',\n",
+       " 'hypot',\n",
+       " 'i0',\n",
+       " 'identity',\n",
+       " 'iinfo',\n",
+       " 'imag',\n",
+       " 'in1d',\n",
+       " 'index_exp',\n",
+       " 'indices',\n",
+       " 'inexact',\n",
+       " 'inf',\n",
+       " 'info',\n",
+       " 'infty',\n",
+       " 'inner',\n",
+       " 'insert',\n",
+       " 'int',\n",
+       " 'int0',\n",
+       " 'int16',\n",
+       " 'int32',\n",
+       " 'int64',\n",
+       " 'int8',\n",
+       " 'int_',\n",
+       " 'int_asbuffer',\n",
+       " 'intc',\n",
+       " 'integer',\n",
+       " 'interp',\n",
+       " 'intersect1d',\n",
+       " 'intp',\n",
+       " 'invert',\n",
+       " 'ipmt',\n",
+       " 'irr',\n",
+       " 'is_busday',\n",
+       " 'isclose',\n",
+       " 'iscomplex',\n",
+       " 'iscomplexobj',\n",
+       " 'isfinite',\n",
+       " 'isfortran',\n",
+       " 'isin',\n",
+       " 'isinf',\n",
+       " 'isnan',\n",
+       " 'isnat',\n",
+       " 'isneginf',\n",
+       " 'isposinf',\n",
+       " 'isreal',\n",
+       " 'isrealobj',\n",
+       " 'isscalar',\n",
+       " 'issctype',\n",
+       " 'issubclass_',\n",
+       " 'issubdtype',\n",
+       " 'issubsctype',\n",
+       " 'iterable',\n",
+       " 'ix_',\n",
+       " 'kaiser',\n",
+       " 'kron',\n",
+       " 'ldexp',\n",
+       " 'left_shift',\n",
+       " 'less',\n",
+       " 'less_equal',\n",
+       " 'lexsort',\n",
+       " 'lib',\n",
+       " 'linalg',\n",
+       " 'linspace',\n",
+       " 'little_endian',\n",
+       " 'load',\n",
+       " 'loads',\n",
+       " 'loadtxt',\n",
+       " 'log',\n",
+       " 'log10',\n",
+       " 'log1p',\n",
+       " 'log2',\n",
+       " 'logaddexp',\n",
+       " 'logaddexp2',\n",
+       " 'logical_and',\n",
+       " 'logical_not',\n",
+       " 'logical_or',\n",
+       " 'logical_xor',\n",
+       " 'logspace',\n",
+       " 'long',\n",
+       " 'longcomplex',\n",
+       " 'longdouble',\n",
+       " 'longfloat',\n",
+       " 'longlong',\n",
+       " 'lookfor',\n",
+       " 'ma',\n",
+       " 'mafromtxt',\n",
+       " 'mask_indices',\n",
+       " 'mat',\n",
+       " 'math',\n",
+       " 'matmul',\n",
+       " 'matrix',\n",
+       " 'matrixlib',\n",
+       " 'max',\n",
+       " 'maximum',\n",
+       " 'maximum_sctype',\n",
+       " 'may_share_memory',\n",
+       " 'mean',\n",
+       " 'median',\n",
+       " 'memmap',\n",
+       " 'meshgrid',\n",
+       " 'mgrid',\n",
+       " 'min',\n",
+       " 'min_scalar_type',\n",
+       " 'minimum',\n",
+       " 'mintypecode',\n",
+       " 'mirr',\n",
+       " 'mod',\n",
+       " 'modf',\n",
+       " 'moveaxis',\n",
+       " 'msort',\n",
+       " 'multiply',\n",
+       " 'nan',\n",
+       " 'nan_to_num',\n",
+       " 'nanargmax',\n",
+       " 'nanargmin',\n",
+       " 'nancumprod',\n",
+       " 'nancumsum',\n",
+       " 'nanmax',\n",
+       " 'nanmean',\n",
+       " 'nanmedian',\n",
+       " 'nanmin',\n",
+       " 'nanpercentile',\n",
+       " 'nanprod',\n",
+       " 'nanstd',\n",
+       " 'nansum',\n",
+       " 'nanvar',\n",
+       " 'nbytes',\n",
+       " 'ndarray',\n",
+       " 'ndenumerate',\n",
+       " 'ndfromtxt',\n",
+       " 'ndim',\n",
+       " 'ndindex',\n",
+       " 'nditer',\n",
+       " 'negative',\n",
+       " 'nested_iters',\n",
+       " 'newaxis',\n",
+       " 'nextafter',\n",
+       " 'nonzero',\n",
+       " 'not_equal',\n",
+       " 'nper',\n",
+       " 'npv',\n",
+       " 'numarray',\n",
+       " 'number',\n",
+       " 'obj2sctype',\n",
+       " 'object',\n",
+       " 'object0',\n",
+       " 'object_',\n",
+       " 'ogrid',\n",
+       " 'oldnumeric',\n",
+       " 'ones',\n",
+       " 'ones_like',\n",
+       " 'os',\n",
+       " 'outer',\n",
+       " 'packbits',\n",
+       " 'pad',\n",
+       " 'partition',\n",
+       " 'percentile',\n",
+       " 'pi',\n",
+       " 'piecewise',\n",
+       " 'pkgload',\n",
+       " 'place',\n",
+       " 'pmt',\n",
+       " 'poly',\n",
+       " 'poly1d',\n",
+       " 'polyadd',\n",
+       " 'polyder',\n",
+       " 'polydiv',\n",
+       " 'polyfit',\n",
+       " 'polyint',\n",
+       " 'polymul',\n",
+       " 'polynomial',\n",
+       " 'polysub',\n",
+       " 'polyval',\n",
+       " 'positive',\n",
+       " 'power',\n",
+       " 'ppmt',\n",
+       " 'print_function',\n",
+       " 'prod',\n",
+       " 'product',\n",
+       " 'promote_types',\n",
+       " 'ptp',\n",
+       " 'put',\n",
+       " 'putmask',\n",
+       " 'pv',\n",
+       " 'r_',\n",
+       " 'rad2deg',\n",
+       " 'radians',\n",
+       " 'random',\n",
+       " 'rank',\n",
+       " 'rate',\n",
+       " 'ravel',\n",
+       " 'ravel_multi_index',\n",
+       " 'real',\n",
+       " 'real_if_close',\n",
+       " 'rec',\n",
+       " 'recarray',\n",
+       " 'recfromcsv',\n",
+       " 'recfromtxt',\n",
+       " 'reciprocal',\n",
+       " 'record',\n",
+       " 'remainder',\n",
+       " 'repeat',\n",
+       " 'require',\n",
+       " 'reshape',\n",
+       " 'resize',\n",
+       " 'result_type',\n",
+       " 'right_shift',\n",
+       " 'rint',\n",
+       " 'roll',\n",
+       " 'rollaxis',\n",
+       " 'roots',\n",
+       " 'rot90',\n",
+       " 'round',\n",
+       " 'round_',\n",
+       " 'row_stack',\n",
+       " 's_',\n",
+       " 'safe_eval',\n",
+       " 'save',\n",
+       " 'savetxt',\n",
+       " 'savez',\n",
+       " 'savez_compressed',\n",
+       " 'sctype2char',\n",
+       " 'sctypeDict',\n",
+       " 'sctypeNA',\n",
+       " 'sctypes',\n",
+       " 'searchsorted',\n",
+       " 'select',\n",
+       " 'set_numeric_ops',\n",
+       " 'set_printoptions',\n",
+       " 'set_string_function',\n",
+       " 'setbufsize',\n",
+       " 'setdiff1d',\n",
+       " 'seterr',\n",
+       " 'seterrcall',\n",
+       " 'seterrobj',\n",
+       " 'setxor1d',\n",
+       " 'shape',\n",
+       " 'shares_memory',\n",
+       " 'short',\n",
+       " 'show_config',\n",
+       " 'sign',\n",
+       " 'signbit',\n",
+       " 'signedinteger',\n",
+       " 'sin',\n",
+       " 'sinc',\n",
+       " 'single',\n",
+       " 'singlecomplex',\n",
+       " 'sinh',\n",
+       " 'size',\n",
+       " 'sometrue',\n",
+       " 'sort',\n",
+       " 'sort_complex',\n",
+       " 'source',\n",
+       " 'spacing',\n",
+       " 'split',\n",
+       " 'sqrt',\n",
+       " 'square',\n",
+       " 'squeeze',\n",
+       " 'stack',\n",
+       " 'std',\n",
+       " 'str',\n",
+       " 'str0',\n",
+       " 'str_',\n",
+       " 'string_',\n",
+       " 'subtract',\n",
+       " 'sum',\n",
+       " 'swapaxes',\n",
+       " 'sys',\n",
+       " 'take',\n",
+       " 'tan',\n",
+       " 'tanh',\n",
+       " 'tensordot',\n",
+       " 'test',\n",
+       " 'testing',\n",
+       " 'tile',\n",
+       " 'timedelta64',\n",
+       " 'trace',\n",
+       " 'tracemalloc_domain',\n",
+       " 'transpose',\n",
+       " 'trapz',\n",
+       " 'tri',\n",
+       " 'tril',\n",
+       " 'tril_indices',\n",
+       " 'tril_indices_from',\n",
+       " 'trim_zeros',\n",
+       " 'triu',\n",
+       " 'triu_indices',\n",
+       " 'triu_indices_from',\n",
+       " 'true_divide',\n",
+       " 'trunc',\n",
+       " 'typeDict',\n",
+       " 'typeNA',\n",
+       " 'typecodes',\n",
+       " 'typename',\n",
+       " 'ubyte',\n",
+       " 'ufunc',\n",
+       " 'uint',\n",
+       " 'uint0',\n",
+       " 'uint16',\n",
+       " 'uint32',\n",
+       " 'uint64',\n",
+       " 'uint8',\n",
+       " 'uintc',\n",
+       " 'uintp',\n",
+       " 'ulonglong',\n",
+       " 'unicode',\n",
+       " 'unicode_',\n",
+       " 'union1d',\n",
+       " 'unique',\n",
+       " 'unpackbits',\n",
+       " 'unravel_index',\n",
+       " 'unsignedinteger',\n",
+       " 'unwrap',\n",
+       " 'ushort',\n",
+       " 'vander',\n",
+       " 'var',\n",
+       " 'vdot',\n",
+       " 'vectorize',\n",
+       " 'version',\n",
+       " 'void',\n",
+       " 'void0',\n",
+       " 'vsplit',\n",
+       " 'vstack',\n",
+       " 'warnings',\n",
+       " 'where',\n",
+       " 'who',\n",
+       " 'zeros',\n",
+       " 'zeros_like']"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dir(np)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'1.14.2'"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.__version__"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<img src=\"http://docs.scipy.org/doc/numpy/_images/threefundamental.png\"/>"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Image object>"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from IPython.display import Image\n",
+    "Image(url='http://docs.scipy.org/doc/numpy/_images/threefundamental.png')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.array([9,0,2,1,0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('int64')"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(5,)"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "numpy.ndarray"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = np.array([[5,3,1,9],[9,2,3,0]], dtype=np.float64)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(dtype('float64'), (2, 4))"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b.dtype, b.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[[0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j]],\n",
+       "\n",
+       "       [[0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j]],\n",
+       "\n",
+       "       [[0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n",
+       "        [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j]]])"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c = np.zeros((9,7))\n",
+    "c\n",
+    "d = np.ones((3,6,4), dtype=np.complex128)\n",
+    "d\n",
+    "e = np.full((2,3,4), np.pi)\n",
+    "e\n",
+    "e = np.ones_like(c)\n",
+    "e\n",
+    "f = np.zeros_like(d)\n",
+    "f"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([2.  , 2.25, 2.5 , 2.75, 3.  , 3.25, 3.5 , 3.75])"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(2,4,0.25)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 10.        ,  12.91549665,  16.68100537,  21.5443469 ,\n",
+       "        27.82559402,  35.93813664,  46.41588834,  59.94842503,\n",
+       "        77.42636827, 100.        ])"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.logspace(1,2,10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([2.   , 2.125, 2.25 , 2.375, 2.5  , 2.625, 2.75 , 2.875, 3.   ,\n",
+       "       3.125, 3.25 , 3.375, 3.5  , 3.625, 3.75 , 3.875, 4.   ])"
+      ]
+     },
+     "execution_count": 81,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.linspace(2,4,17)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.])"
+      ]
+     },
+     "execution_count": 141,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = np.linspace(-180, 180, 9)\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-90., -45.,   0.,  45.,  90.])"
+      ]
+     },
+     "execution_count": 142,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y = np.linspace(-90, 90, 5)\n",
+    "y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.],\n",
+       "       [-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.],\n",
+       "       [-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.],\n",
+       "       [-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.],\n",
+       "       [-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.]])"
+      ]
+     },
+     "execution_count": 143,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx, yy = np.meshgrid(x,y)\n",
+    "xx"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-90., -90., -90., -90., -90., -90., -90., -90., -90.],\n",
+       "       [-45., -45., -45., -45., -45., -45., -45., -45., -45.],\n",
+       "       [  0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.],\n",
+       "       [ 45.,  45.,  45.,  45.,  45.,  45.,  45.,  45.,  45.],\n",
+       "       [ 90.,  90.,  90.,  90.,  90.,  90.,  90.,  90.,  90.]])"
+      ]
+     },
+     "execution_count": 144,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "yy"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 145,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "((5, 9), (5, 9))"
+      ]
+     },
+     "execution_count": 145,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx.shape, yy.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(-180.0, 180.0, 0.0)"
+      ]
+     },
+     "execution_count": 146,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx[0,0], xx[-1,-1], xx[3,-5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 147,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "((9,), (5,))"
+      ]
+     },
+     "execution_count": 147,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx[0].shape, xx[:,-1].shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 148,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-180., -135.,  -90.,  -45.,    0.,   45.,   90.,  135.,  180.])"
+      ]
+     },
+     "execution_count": 148,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([180., 180., 180., 180., 180.])"
+      ]
+     },
+     "execution_count": 149,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx[:,-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 151,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-45.,   0.,  45.,  90., 135., 180.],\n",
+       "       [-45.,   0.,  45.,  90., 135., 180.],\n",
+       "       [-45.,   0.,  45.,  90., 135., 180.]])"
+      ]
+     },
+     "execution_count": 151,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx[1:4,3:9]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 155,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([-90., -90., -90., -90., -45., -45., -45., -45.,   0.,   0.,   0.,\n",
+       "         0.,  45.,  45.,  45.,  45.,  90.,  90.,  90.,  90.])"
+      ]
+     },
+     "execution_count": 155,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "idx = xx<0\n",
+    "yy[idx].shape\n",
+    "yy[idx]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 162,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(45,)"
+      ]
+     },
+     "execution_count": 162,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "xx.ravel().shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 165,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = np.sin(xx) * np.cos(0.5*yy)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 166,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/home2/zpengfei/miniconda3/envs/pangeo/lib/python3.6/site-packages/matplotlib/font_manager.py:278: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.\n",
+      "  'Matplotlib is building the font cache using fc-list. '\n"
+     ]
+    }
+   ],
+   "source": [
+    "%matplotlib inline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "plt."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
